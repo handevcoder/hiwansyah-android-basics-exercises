@@ -23,8 +23,7 @@ class ResultActivity : AppCompatActivity() {
         btnKirimBalik.setOnClickListener {
 
             if (edtUser.text.isNotEmpty()) {
-                Snackbar.make(it, "Edit Text tidak sedang kosong !",
-                    Snackbar.LENGTH_SHORT).show()
+                Snackbar.make(it, "Edit Text tidak sedang kosong !", Snackbar.LENGTH_SHORT).show()
                     val reply = edtUserResult.text.toString()
                     val i = Intent(this, SecondActivity::class.java)
                     i.putExtra("user", reply)
